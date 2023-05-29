@@ -7,11 +7,12 @@ import { Router } from '@angular/router';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent {
-  constructor(private router:Router){
 
-  }
-  login(){
-    this.router.navigate(['login'])
-  }
-  }
+  title = 'myProject';
 
+  constructor(private router:Router){}
+
+  goToLogin() {
+    this.router.navigate(['/login']);
+  }
+}
